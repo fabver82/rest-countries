@@ -113,6 +113,38 @@ table {
   border-top-left-radius: 0.5rem;
   padding: 2rem 3rem;
 }
+.form-country__dropdown__button, .form-country .dropdown-region__button {
+  margin: 1.5rem 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  max-width: 15rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
+  box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
+}
+.form-country__dropdown__content, .form-country .dropdown-region__content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  min-width: 15rem;
+  background-color: white;
+  margin: 1.5rem 1.5rem;
+  margin-top: 0.5rem;
+  padding: 0rem 3rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
+  box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
+}
+.form-country__dropdown__item, .form-country .dropdown-region__item {
+  background-color: white;
+  max-width: 15rem;
+  padding: 0.5rem 0rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #111517;
+}
 
 body {
   font-size: 87.5%;
