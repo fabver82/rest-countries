@@ -1,0 +1,23 @@
+{
+  "name": "rest-countries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./src/sass/base.scss ./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabver82/rest-countries.git"
+  },
+  "author": "Fabien Vermeiren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabver82/rest-countries/issues"
+  },
+  "homepage": "https://github.com/fabver82/rest-countries#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
