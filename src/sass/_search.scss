@@ -1,0 +1,39 @@
+@mixin input-text{
+    background-color: $white;
+    color:$LM-dark-gray;
+    font-size: 1.3rem;
+}
+.form-country{
+    display:flex;
+    flex-direction: column;
+
+    &__input,.search{
+        margin:2.5rem 1.5rem;
+        display:flex;
+        
+        -webkit-box-shadow: 0px 5px 5px -4px rgba(198,198,198,0.67); 
+        box-shadow: 0px 5px 5px -4px rgba(198,198,198,0.67);
+        
+        
+        &__input{
+            @include input-text();
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+            width: 100%;
+            border:0;
+            font-family: 'Nunito 600';
+            outline:none;
+            
+        }
+        
+        &__icon{
+            @include input-text();
+            border-bottom-left-radius: 0.5em;
+            border-top-left-radius: 0.5rem;
+            padding: 2rem 3rem;
+        }
+    }
+
+
+    
+}

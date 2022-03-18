@@ -1,8 +1,13 @@
 @import 'reset';
 @import 'variables';
 @import 'header';
+@import 'search';
 
 body{
     font-size:87.5%;//14px;
     background-color: $LM-very-light-gray;
+}
+//main
+.container{
+    
 }

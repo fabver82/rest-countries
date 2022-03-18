@@ -84,6 +84,36 @@ table {
   padding-right: 0.5rem;
 }
 
+.form-country {
+  display: flex;
+  flex-direction: column;
+}
+.form-country__input, .form-country .search {
+  margin: 2.5rem 1.5rem;
+  display: flex;
+  -webkit-box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
+  box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
+}
+.form-country__input__input, .form-country .search__input {
+  background-color: white;
+  color: #858585;
+  font-size: 1.3rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 100%;
+  border: 0;
+  font-family: "Nunito 600";
+  outline: none;
+}
+.form-country__input__icon, .form-country .search__icon {
+  background-color: white;
+  color: #858585;
+  font-size: 1.3rem;
+  border-bottom-left-radius: 0.5em;
+  border-top-left-radius: 0.5rem;
+  padding: 2rem 3rem;
+}
+
 body {
   font-size: 87.5%;
   background-color: #fafafa;
