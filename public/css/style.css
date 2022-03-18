@@ -48,11 +48,40 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Nunito 300";
+  src: url("../../public/fonts/NunitoSans-Light.ttf");
+}
+@font-face {
+  font-family: "Nunito 600";
+  src: url("../../public/fonts/NunitoSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Nunito 800";
+  src: url("../../public/fonts/NunitoSans-ExtraBold.ttf");
+}
 .header {
-  width: 100vw;
-  background-color: red;
+  background-color: white;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1.5rem;
+  font-size: 1.4rem;
+  -webkit-box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
+  box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
+}
+.header__title {
+  font-family: "Nunito 800";
+  color: #111517;
+}
+.header__button {
+  font-family: "Nunito 300";
+}
+
+body {
+  font-size: 87.5%;
+  background-color: #fafafa;
 }
 
 /*# sourceMappingURL=style.css.map */

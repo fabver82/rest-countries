@@ -8,3 +8,17 @@ $LM-very-light-gray:hsl(0, 0%, 98%);//background
 
 //Dark mode text - light mode elements
 $white:hsl(0, 0%, 100%);
+
+@font-face {
+    font-family: 'Nunito 300';
+    src: url('../../public/fonts/NunitoSans-Light.ttf');
+}
+@font-face {
+    font-family: 'Nunito 600';
+    src: url('../../public/fonts/NunitoSans-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Nunito 800';
+    src: url('../../public/fonts/NunitoSans-ExtraBold.ttf');
+}
+
