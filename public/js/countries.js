@@ -9,8 +9,8 @@ const getCountryByName = async (name)=>{
     return datas;
 }
 const countriesHtml = document.getElementById('countries');
-const fillDatas = async ()=>{
-    let countries = await getCountryByName('Be');
+const fillDatas = async (name)=>{
+    let countries = await getCountryByName(name);
     console.log(countries);
     for (country of countries){
         countriesHtml.innerHTML += `
@@ -23,5 +23,11 @@ const fillDatas = async ()=>{
         </articles>`
     }
 }
-fillDatas();
+
+const search = document.getElementById('submit-search');
+const searchInput=document.getElementById('search-input');
+
+search.addEventListener('click',async ()=>{
+    await fillDatas(searchInput.value);
+})
 
