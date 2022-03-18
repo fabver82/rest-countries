@@ -6,23 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REST Countries</title>
     <link rel="stylesheet" href="./public/css/style.css">
+    <script src="https://kit.fontawesome.com/65dbf19ac7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header role="header" class="header">
         <h1 class="header__title">Where in the world?</h1>
-        <button class="header__button">Dark Mode</button>
+        <button class="header__button"><i class="fa-solid fa-moon"></i>Dark Mode</button>
     </header>
     <main role="main" class="container">
         <section role="search" class="form-country">
-            <input type="text" class="form-country__input" placeholder="Search for a country">
+            <div class="form-country__input search">   
+                <input type="text" class="search__input search-input" placeholder="Search for a country">
+                <i class="fa-solid fa-magnifying-glass search-input__icon"></i>
+            </div>
+            
             <div class="form-country__dropdown dropdown-region">
                 <button class="dropdown-region__button">Filter by Region</button>
                 <div id="dropdown-region" class="dropdown-region__content">
-                    <a href="#">Africa</a>
-                    <a href="#">America</a>
-                    <a href="#">Asia</a>
-                    <a href="#">Europe</a>
-                    <a href="#">Oceania</a>
+                    <a class="dropdown-region__item" href="#">Africa</a>
+                    <a class="dropdown-region__item" href="#">America</a>
+                    <a class="dropdown-region__item" href="#">Asia</a>
+                    <a class="dropdown-region__item" href="#">Europe</a>
+                    <a class="dropdown-region__item" href="#">Oceania</a>
                 </div>
             </div>
         </section>

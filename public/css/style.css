@@ -48,4 +48,11 @@ table {
   border-spacing: 0;
 }
 
+.header {
+  width: 100vw;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+
 /*# sourceMappingURL=style.css.map */
