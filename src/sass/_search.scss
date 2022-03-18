@@ -47,6 +47,10 @@
             border-radius:0.5rem;
             @include shadow();
         }
+        &__icon{
+            position:relative;
+            float: right;
+        }
         &__content{
             display:none;
             // display:flex;
