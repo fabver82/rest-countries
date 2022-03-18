@@ -104,6 +104,7 @@ table {
   border: 0;
   font-family: "Nunito 600";
   outline: none;
+  cursor: pointer;
 }
 .form-country__input__icon, .form-country .search__icon {
   background-color: white;
