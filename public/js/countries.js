@@ -28,6 +28,7 @@ const search = document.getElementById('submit-search');
 const searchInput=document.getElementById('search-input');
 
 search.addEventListener('click',async ()=>{
+    countriesHtml.innerHTML = '';
     await fillDatas(searchInput.value);
 })
 
