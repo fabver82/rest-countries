@@ -25,7 +25,6 @@
             border:0;
             font-family: 'Nunito 600';
             outline:none;
-            cursor: pointer;
         }
         
         &__icon{
@@ -33,6 +32,7 @@
             border-bottom-left-radius: 0.5em;
             border-top-left-radius: 0.5rem;
             padding: 2rem 3rem;
+            cursor: pointer;
         }
     }
 

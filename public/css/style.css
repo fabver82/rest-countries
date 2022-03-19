@@ -104,7 +104,6 @@ table {
   border: 0;
   font-family: "Nunito 600";
   outline: none;
-  cursor: pointer;
 }
 .form-country__input__icon, .form-country .search__icon {
   background-color: white;
@@ -113,6 +112,7 @@ table {
   border-bottom-left-radius: 0.5em;
   border-top-left-radius: 0.5rem;
   padding: 2rem 3rem;
+  cursor: pointer;
 }
 .form-country__dropdown__button, .form-country .dropdown-region__button {
   margin: 1.5rem 1.5rem;
@@ -155,7 +155,8 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  gap: 3rem;
+  background-color: #fafafa;
   margin: 1rem 3rem;
 }
 
@@ -164,7 +165,6 @@ table {
   box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
   border-radius: 0.5rem;
   padding-bottom: 2rem;
-  margin-bottom: 3rem;
 }
 .card__img {
   border-top-left-radius: 0.5rem;
