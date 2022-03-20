@@ -15,9 +15,9 @@ items.forEach(item=>{
             content.style.display='none';
             document.getElementById('dropdown').textContent=`${item.textContent}`
             if(searchInput.value ==''){
-                await fillDatas('All',item.textContent);
+                await filterDatas('All',item.textContent);
             }else{
-                await fillDatas(searchInput.value,item.textContent);
+                await filterDatas(searchInput.value,item.textContent);
             }
             
         }else{

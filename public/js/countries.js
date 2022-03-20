@@ -17,7 +17,7 @@ const fillTemplate= (country)=>{
     <h3 class="card__capital-header">Capital:<span class="card__capital-content">${country.capital}</span> </h3>
 </articles>`
 }
-const fillDatas = async (name='All',region='')=>{
+const filterDatas = async (name='All',region='')=>{
     let countries;
     if (name=='All' || name==''){
         countries = await getAllCountries();
@@ -44,13 +44,13 @@ searchInput.addEventListener('keyup',async ()=>{
     console.log(region);
     if (region=='Filter by Region'){
         console.log('ok')
-        await fillDatas(searchInput.value);
+        await filterDatas(searchInput.value);
     }else{
-        await fillDatas(searchInput.value,region);
+        await filterDatas(searchInput.value,region);
     } 
 })
 window.onload = async()=>{
-    await fillDatas();
+    await filterDatas();
 }
 
 
