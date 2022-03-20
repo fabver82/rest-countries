@@ -8,7 +8,15 @@ const getCountryByName = async (name)=>{
     const datas = await reponse.json();
     return datas;
 }
-
+const fillTemplate= (country)=>{
+    return `<articles class="card">
+    <picture class="card__flag"><img class="card__img" src="${country.flag}" alt="${country.name} flag"></picture>
+    <h2 class="card__title">${country.name}</h2>
+    <h3 class="card__population-header">Population:<span class="card__population-content">${country.population}</span> </h3>
+    <h3 class="card__region-header">Region:<span class="card__region-content">${country.region}</span> </h3>
+    <h3 class="card__capital-header">Capital:<span class="card__capital-content">${country.capital}</span> </h3>
+</articles>`
+}
 const fillDatas = async (name='All',region='')=>{
     let countries;
     if (name=='All' || name==''){
@@ -20,24 +28,11 @@ const fillDatas = async (name='All',region='')=>{
     countriesHtml.innerHTML = '';
     for (country of countries){
         if (region!=='' && region==country.region){
-            countriesHtml.innerHTML += `
-        <articles class="card">
-            <picture class="card__flag"><img class="card__img" src="${country.flag}" alt="${country.name} flag"></picture>
-            <h2 class="card__title">${country.name}</h2>
-            <h3 class="card__population-header">Population:<span class="card__population-content">${country.population}</span> </h3>
-            <h3 class="card__region-header">Region:<span class="card__region-content">${country.region}</span> </h3>
-            <h3 class="card__capital-header">Capital:<span class="card__capital-content">${country.capital}</span> </h3>
-        </articles>`
+            countriesHtml.innerHTML += fillTemplate(country);
+        
         }
         if (region==''){
-            countriesHtml.innerHTML += `
-        <articles class="card">
-            <picture class="card__flag"><img class="card__img" src="${country.flag}" alt="${country.name} flag"></picture>
-            <h2 class="card__title">${country.name}</h2>
-            <h3 class="card__population-header">Population:<span class="card__population-content">${country.population}</span> </h3>
-            <h3 class="card__region-header">Region:<span class="card__region-content">${country.region}</span> </h3>
-            <h3 class="card__capital-header">Capital:<span class="card__capital-content">${country.capital}</span> </h3>
-        </articles>`
+            countriesHtml.innerHTML += fillTemplate(country);
         }
     }
 }
