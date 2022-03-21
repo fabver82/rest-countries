@@ -10,13 +10,20 @@
 .form-country{
     display:flex;
     flex-direction: column;
-
+    @media screen and (min-width: 960px){
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+    }
     
     &__input,.search{
         margin:2.5rem 1.5rem;
         display:flex;
         @include shadow();
-        
+        @media screen and (min-width: 960px){
+            min-width:40vw;
+            margin:1rem 3rem;
+        }
         &__input{
             @include input-text();
             border-top-right-radius: 0.5rem;
@@ -37,6 +44,9 @@
     }
 
     &__dropdown,.dropdown-region{
+        @media screen and (min-width: 960px){
+            margin-right:3rem;
+        }
         &__button{
             margin:1.5rem 1.5rem;
             margin-bottom: 0.5rem;
@@ -46,6 +56,11 @@
             font-size: 1.2rem;
             border-radius:0.5rem;
             @include shadow();
+            @media screen and (min-width: 960px){
+                min-width:12rem;
+                padding:2rem 1rem;
+                font-size: 1rem;
+            }
         }
         &__icon{
             position:relative;
@@ -63,6 +78,10 @@
             padding: 0rem 3rem;
             border-radius:0.5rem;
             @include shadow();
+            @media screen and (min-width: 960px){
+                min-width:12rem;
+                padding:2rem 1rem;
+            }
         }
         &__item{
             background-color: $white;

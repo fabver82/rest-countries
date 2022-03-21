@@ -34,16 +34,16 @@
         border-top-right-radius: 0.5rem;
         min-width:80vw;
         max-width:80vw;
-        max-height: 200px;
+        max-height: 300px;
         @media screen and (min-width: 960px){
             min-width: 40vw;
             max-width: 40vw;
-            max-height: 200px;
+            max-height: 250px;
         }
         @media screen and (min-width: 1280px){
             min-width: 20vw;
             max-width: 20vw;
-            max-height: 150px;
+            max-height: 200px;
         }
         // min-height:100px;
         // max-height: 250px;

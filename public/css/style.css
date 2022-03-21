@@ -88,11 +88,24 @@ table {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 960px) {
+  .form-country {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .form-country__input, .form-country .search {
   margin: 2.5rem 1.5rem;
   display: flex;
   -webkit-box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
   box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
+}
+@media screen and (min-width: 960px) {
+  .form-country__input, .form-country .search {
+    min-width: 40vw;
+    margin: 1rem 3rem;
+  }
 }
 .form-country__input__input, .form-country .search__input {
   background-color: white;
@@ -114,6 +127,11 @@ table {
   padding: 2rem 3rem;
   cursor: pointer;
 }
+@media screen and (min-width: 960px) {
+  .form-country__dropdown, .form-country .dropdown-region {
+    margin-right: 3rem;
+  }
+}
 .form-country__dropdown__button, .form-country .dropdown-region__button {
   margin: 1.5rem 1.5rem;
   margin-bottom: 0.5rem;
@@ -124,6 +142,13 @@ table {
   border-radius: 0.5rem;
   -webkit-box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
   box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
+}
+@media screen and (min-width: 960px) {
+  .form-country__dropdown__button, .form-country .dropdown-region__button {
+    min-width: 12rem;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
 }
 .form-country__dropdown__icon, .form-country .dropdown-region__icon {
   position: relative;
@@ -141,6 +166,12 @@ table {
   border-radius: 0.5rem;
   -webkit-box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
   box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
+}
+@media screen and (min-width: 960px) {
+  .form-country__dropdown__content, .form-country .dropdown-region__content {
+    min-width: 12rem;
+    padding: 2rem 1rem;
+  }
 }
 .form-country__dropdown__item, .form-country .dropdown-region__item {
   background-color: white;
@@ -197,20 +228,20 @@ table {
   border-top-right-radius: 0.5rem;
   min-width: 80vw;
   max-width: 80vw;
-  max-height: 200px;
+  max-height: 300px;
 }
 @media screen and (min-width: 960px) {
   .card__img {
     min-width: 40vw;
     max-width: 40vw;
-    max-height: 200px;
+    max-height: 250px;
   }
 }
 @media screen and (min-width: 1280px) {
   .card__img {
     min-width: 20vw;
     max-width: 20vw;
-    max-height: 150px;
+    max-height: 200px;
   }
 }
 .card__title {
