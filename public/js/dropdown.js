@@ -7,16 +7,15 @@ document.getElementById('dropdown').addEventListener('click',()=>{
     }
 })
 let items = document.querySelectorAll('.dropdown-region__item');
-// console.log(items);
+
+
 items.forEach(item=>{
     item.addEventListener('click',async()=>{
-        // console.log(item.textContent)
         if (content.style.display=='flex'){
             content.style.display='none';
             document.getElementById('dropdown').textContent=`${item.textContent}`;
             let icon = document.createElement('i');
             icon.classList.add("fa-solid","fa-circle-down","dropdown-region__icon");
-            console.log(icon);
             document.getElementById('dropdown').appendChild(icon)
             if(searchInput.value ==''){
                 await filterDatas('All',item.textContent);

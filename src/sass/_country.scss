@@ -10,10 +10,14 @@
     @include shadow();
     border-radius: 0.5rem;
     padding-bottom: 2rem;
+    max-width:80vw;
     &__img{
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
-        max-width:100%;
+        min-width:80vw;
+        max-width:80vw;
+        // min-height:100px;
+        // max-height: 250px;
     }
     &__title{
         font-size: 2rem;
