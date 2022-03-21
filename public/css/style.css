@@ -159,29 +159,80 @@ table {
   background-color: #fafafa;
   margin: 1rem 3rem;
 }
+@media screen and (min-width: 960px) {
+  .countries-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .countries-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 .card {
   -webkit-box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
   box-shadow: 0px 5px 5px -4px rgba(198, 198, 198, 0.67);
   border-radius: 0.5rem;
   padding-bottom: 2rem;
+  background-color: white;
   max-width: 80vw;
+}
+@media screen and (min-width: 960px) {
+  .card {
+    max-width: 40vw;
+    min-height: 400px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card {
+    max-width: 20vw;
+    min-height: 300px;
+  }
 }
 .card__img {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   min-width: 80vw;
   max-width: 80vw;
+  max-height: 200px;
+}
+@media screen and (min-width: 960px) {
+  .card__img {
+    min-width: 40vw;
+    max-width: 40vw;
+    max-height: 200px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card__img {
+    min-width: 20vw;
+    max-width: 20vw;
+    max-height: 150px;
+  }
 }
 .card__title {
   font-size: 2rem;
   font-family: "Nunito 800";
   padding: 2rem 3rem;
 }
+@media screen and (min-width: 1280px) {
+  .card__title {
+    padding: 2rem 1.5rem;
+  }
+}
 .card__population-header, .card__region-header, .card__capital-header {
   font-size: 1.5rem;
   font-family: "Nunito 600";
   padding: 0.5rem 3rem;
+}
+@media screen and (min-width: 1280px) {
+  .card__population-header, .card__region-header, .card__capital-header {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+  }
 }
 .card__population-content, .card__region-content, .card__capital-content {
   font-family: "Nunito 300";
