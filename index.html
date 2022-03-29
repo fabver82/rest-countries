@@ -9,11 +9,11 @@
     <script src="https://kit.fontawesome.com/65dbf19ac7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header role="header" class="header">
+    <header role="title" class="header">
         <h1 class="header__title">Where in the world?</h1>
         <a class="header__button"><i class="fa-solid fa-moon header__icon"></i>Dark Mode</a>
     </header>
-    <main role="main" class="container">
+    <main role="content" class="container">
         <section role="search" class="form-country">
             <div class="form-country__input search">
                 <i id="submit-search" class="fa-solid fa-magnifying-glass search__icon"></i>   
@@ -22,15 +22,6 @@
             </div>
             
             <div class="form-country__dropdown dropdown-region">
-                <!-- <select name="cars" id="dropdown" class="dropdown-region__button">
-                    <option class="dropdown-region__item" value="All">Filter by Region</option>
-                    <option class="dropdown-region__item" value="Africa">Africa</option>
-                    <option class="dropdown-region__item" value="Americas">America</option>
-                    <option class="dropdown-region__item" value="Asia">Asia</option>
-                    <option class="dropdown-region__item" value="Europe">Europe</option>
-                    <option class="dropdown-region__item" value="Oceania">Oceania</option>
-                </select> -->
-                <!-- <div class="dropdown-region__input-container"> -->
                 <p id="dropdown" class="dropdown-region__button">Filter by Region <i class="fa-solid fa-circle-down dropdown-region__icon"></i></p>
                 <!-- </div> -->
                 <div id="dropdown-region" class="dropdown-region__content">
@@ -42,7 +33,7 @@
                 </div>
             </div>
         </section>
-        <section id="countries" class="countries-container" role="countries">
+        <section id="countries" class="countries-container" role="content">
             <!-- data should come here -->
             
         </section>
