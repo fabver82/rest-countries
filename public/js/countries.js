@@ -24,7 +24,7 @@ const fillTemplate= (country,template,elParent)=>{
     cardRegion.textContent = country.region;
     cardCapital.textContent = country.capital;
     card.addEventListener('click',()=>{
-        window.location.href=`./details.html?name=${country.id}`;
+        window.location.href=`./details.html?name=${country.name}`;
     })
     elParent.append(clone);
 //     return `<articles id="card" data-country="${country.name}" class="card">
