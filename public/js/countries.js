@@ -19,7 +19,7 @@ const fillTemplate= (country,template,elParent)=>{
     let cardRegion = clone.querySelector('.card__region-content');
     let cardCapital = clone.querySelector('.card__capital-content');
     cardImage.src=country.flag;
-    cardTitle.textContent = country.title;
+    cardTitle.textContent = country.name;
     cardPopulation.textContent = pop;
     cardRegion.textContent = country.region;
     cardCapital.textContent = country.capital;
