@@ -12,7 +12,7 @@ const fillTemplate= (country,template,elParent)=>{
     let pop = country.population.toLocaleString();
 
     const clone = document.importNode(template.content, true);
-  
+    let card = clone.querySelector('.card');
     let cardImage = clone.querySelector('.card__img');
     let cardTitle = clone.querySelector('.card__title');
     let cardPopulation = clone.querySelector('.card__population-content');
@@ -23,6 +23,9 @@ const fillTemplate= (country,template,elParent)=>{
     cardPopulation.textContent = pop;
     cardRegion.textContent = country.region;
     cardCapital.textContent = country.capital;
+    card.addEventListener('click',()=>{
+        window.location.href=`./details.html?name=${country.id}`;
+    })
     elParent.append(clone);
 //     return `<articles id="card" data-country="${country.name}" class="card">
 //     <picture class="card__flag"><img class="card__img" src="${country.flag}" alt="${country.name} flag"></picture>
