@@ -17,6 +17,7 @@ items.forEach(item=>{
             let icon = document.createElement('i');
             icon.classList.add("fa-solid","fa-circle-down","dropdown-region__icon");
             document.getElementById('dropdown').appendChild(icon)
+
             if(searchInput.value ==''){
                 await filterDatas('All',item.textContent);
             }else{

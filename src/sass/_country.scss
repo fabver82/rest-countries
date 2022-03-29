@@ -20,6 +20,9 @@
     padding-bottom: 2rem;
     background-color: $white;
     max-width:80vw;
+
+    //make it clickable
+    cursor: pointer;
     
     @media screen and (min-width: 960px){
         max-width: 40vw;

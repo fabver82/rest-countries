@@ -210,6 +210,7 @@ table {
   padding-bottom: 2rem;
   background-color: white;
   max-width: 80vw;
+  cursor: pointer;
 }
 @media screen and (min-width: 960px) {
   .card {
