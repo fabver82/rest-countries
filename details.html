@@ -14,27 +14,30 @@
         <a class="header__button"><i class="fa-solid fa-moon header__icon"></i>Dark Mode</a>
     </header>
     <main role="main" class="container">
-        <a class="back-button">Back <i class="fa-solid fa-arrow-left-long"></i></a>
+        <a class="back-button" href="index.html"><i class="fa-solid fa-arrow-left-long"></i> Back </a>
         <section id="country-details" class="country-details" role="country details">
             <!-- data should come here -->
-            <picture class="card__flag"><img class="card__img" src="#" alt=""></picture>
+            <picture class="country-details__flag"><img class="card__img" src="#" alt=""></picture>
             <h1 class="country-details__name"></h1>
-            <h3 class="country-details__native-header">Native Name:<span class="country-details__native-content"></span></h3>
-            <h3 class="country-details__population-header">Population:<span class="country-details__population-content"></span></h3>
-            <h3 class="country-details__region-header">Region:<span class="country-details__region-content"></span></h3>
-            <h3 class="country-details__subregion-header">Sub Region:<span class="country-details__subregion-content"></span></h3>
-            <h3 class="country-details__capital-header">Capital:<span class="country-details__capital-content"></span></h3>
+            <div class="country-details__blockone">
+                <h3 class="country-details__native-header">Native Name:<span class="country-details__native-content"></span></h3>
+                <h3 class="country-details__population-header">Population:<span class="country-details__population-content"></span></h3>
+                <h3 class="country-details__region-header">Region:<span class="country-details__region-content"></span></h3>
+                <h3 class="country-details__subregion-header">Sub Region:<span class="country-details__subregion-content"></span></h3>
+                <h3 class="country-details__capital-header">Capital:<span class="country-details__capital-content"></span></h3>
+            </div>
             
-            <h3 class="country-details__domain-header">Top Level Domain:<span class="country-details__domain-content"></span></h3>
-            <h3 class="country-details__currencies-header">Currencies:<span class="country-details__currencies-content"></span></h3>
-            <h3 class="country-details__languages-header">Languages:<span class="country-details__languages-content"></span></h3>
+            <div class="country-details__blocktwo">
+                <h3 class="country-details__domain-header">Top Level Domain:<span class="country-details__domain-content"></span></h3>
+                <h3 class="country-details__currencies-header">Currencies:<span class="country-details__currencies-content"></span></h3>
+                <h3 class="country-details__languages-header">Languages:<span class="country-details__languages-content"></span></h3>    
+            </div>
 
             <div class="country-details__borders borders">
                 <h2 class="borders__title">Border Countries:</h2>
                 <ul class="borders__list">
                     <!-- <li class="borders__item"><a href="#" class="borders__link">France</a></li> -->
                 </ul>
-
             </div>
         </section>
         

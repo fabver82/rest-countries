@@ -1,0 +1,108 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.country-details{
+    background-color:$LM-very-light-gray;
+    margin:1rem 3rem;
+    @media screen and (min-width: 960px){
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        grid-template-rows: 50px 1fr 1fr;
+        &__flag{
+            grid-column: 1/2;
+            grid-row: 1/4;
+        }
+        &__name{
+            grid-column: 2/4;
+            grid-row: 1/2;
+        }
+        &__blockone{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        &__blocktwo{
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        &__borders{
+            grid-column: 2/4;
+            grid-row: 3/4;
+        }
+    }
+    
+    &__name{
+        font-size: 2rem;
+        font-family: 'Nunito 800';
+        padding:2rem 0;
+        @media screen and (min-width: 960px){
+            padding:0;
+        }
+    }
+    h3{
+        font-size: 1.1rem;
+        font-family: 'Nunito 600';
+        padding:0.5rem 0;
+
+    }
+    &__capital-header,&__languages-header{
+        margin-bottom: 2rem;
+    }
+    span{
+        font-family: 'Nunito 300';
+        padding-left:0.5rem;
+    }
+
+}
+.borders{
+    font-size: 1.2rem;
+    font-family: 'Nunito 600';
+    max-width: 500px;
+    @media screen and (min-width: 960px){
+        display:flex;
+        flex-direction: row;
+        max-width: 800px;
+        justify-content: left;
+        &__title{
+            white-space: nowrap;
+        }
+    }
+    &__list{
+        padding:2rem 0rem;
+        @media screen and (min-width: 960px){
+            padding:0rem 0rem;
+        }
+    }
+    &__item{
+        display: inline-flex;
+        text-align: center;
+        padding:0.3rem 0.3rem;
+        @media screen and (min-width: 960px){
+            padding:0.3rem 0.5rem;
+        }
+    }
+    &__link{
+        @include shadow();
+        font-family: 'Nunito 300';
+        font-size: 0.8rem;
+        background-color: white;
+        color:black;
+        padding:0.5rem 1.5rem;
+        text-decoration:none;
+    }
+}
+.back-button{
+    @include shadow();
+    font-family: 'Nunito 300';
+    font-size: 1.2rem;
+    background-color: white;
+    color:black;
+    padding:0.5rem 1.5rem;
+    margin: 1rem 2rem;
+    max-width:70px;
+    text-decoration:none;
+    align-self: flex-start;
+}
+
